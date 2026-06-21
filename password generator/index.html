@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💖 Password Generator 💖</h1>
+
+    <input type="text" id="password" readonly>
+
+    <div class="options">
+        <label>
+            Length:
+            <input type="number" id="length" min="4" max="30" value="12">
+        </label>
+
+        <label>
+            <input type="checkbox" id="numbers" checked>
+            Include Numbers
+        </label>
+
+        <label>
+            <input type="checkbox" id="symbols" checked>
+            Include Symbols
+        </label>
+    </div>
+
+    <button onclick="generatePassword()">
+        Generate Password
+    </button>
+
+    <button onclick="copyPassword()">
+        Copy Password
+    </button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
