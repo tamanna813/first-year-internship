@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffd6e7,#ffeef5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:400px;
+    background:#fff;
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(255,105,180,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#ff5fa2;
+    margin-bottom:15px;
+}
+
+h2{
+    text-align:center;
+    color:#444;
+    margin-bottom:20px;
+}
+
+.summary{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.summary div{
+    flex:1;
+    background:#fff0f7;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+}
+
+#income{
+    color:#28a745;
+    font-weight:600;
+}
+
+#expense{
+    color:#ff4d88;
+    font-weight:600;
+}
+
+h3{
+    color:#ff5fa2;
+    margin:15px 0 10px;
+}
+
+ul{
+    list-style:none;
+    max-height:220px;
+    overflow-y:auto;
+}
+
+li{
+    background:#fff0f7;
+    margin-bottom:10px;
+    padding:12px;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+button{
+    border:none;
+    background:#ff5fa2;
+    color:white;
+    padding:8px 12px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+input{
+    padding:12px;
+    border:2px solid #ffd1e3;
+    border-radius:12px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#ff5fa2;
+}
+
+form button{
+    padding:12px;
+    font-size:16px;
+}
